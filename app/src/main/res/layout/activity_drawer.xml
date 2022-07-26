@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerActivity"
+    android:id="@+id/drawer_layout">
+
+<!-- 서랍이 열리기 전에 보여줄 메인 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메인화면"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서랍"
+            android:id="@+id/btn_open"/>
+
+    </LinearLayout>
+
+<!-- 서랍이 열리기 전에 보여줄 메인 레이아웃-->
+<!--    서랍 레이아웃-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        android:orientation="vertical"
+        android:background="#8ac"
+        android:layout_gravity="start">
+        <!--300dp 임에도 색이 화면을 완전히 덮음-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나는 서랍"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/rabbit"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서랍닫기"
+            android:id="@+id/btn_close"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer2"
+        android:orientation="vertical"
+        android:background="#8ac"
+        android:layout_gravity="end">
+        <!--300dp 임에도 색이 화면을 완전히 덮음-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나는 서랍"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/rabbit"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서랍닫기"
+            android:id="@+id/btn_close2"/>
+
+
+    </LinearLayout>
+
+<!--    서랍 레이아웃-->
+
+</androidx.drawerlayout.widget.DrawerLayout>
